@@ -7,11 +7,33 @@ The app will use the Google Calender API to fetch upcoming events.
 
 ## production handling
 
-For building and deploying run
+For building and deploying run (in main dir)
 
 `npm run deploy`
 
 the build will be deployed to [gh-pages](https://koljapohl.github.io/meet)
+
+for testing a serverless function locally run
+
+`serverless invoke local --function <FUNCTION_NAME>`
+
+deploy a serverless function
+
+`serverless deploy`
+
+for viewing previously deployed service
+
+`serverless info`
+
+run a local http server for a static HTML file for testing purposes (within test folder)
+
+`http-server`
+
+serves all files in the current directory on a local server
+
+to run unit tests (from main folder)
+
+`npm run test`
 
 ## Key features
 
@@ -24,9 +46,9 @@ the build will be deployed to [gh-pages](https://koljapohl.github.io/meet)
 
 ## User stories
 
-●As a user, I would like to be able to ﬁlter events by city so that I can see the list of events that
+● As a user, I would like to be able to filter events by city so that I can see the list of events that
 take place in that city.
-●As a user, I would like to be able to show/hide event details so that I can see more/less
+● As a user, I would like to be able to show/hide event details so that I can see more/less
 information about an event.
 ● As a user, I would like to be able to specify the number of events I want to view in the app so
 that I can see more or fewer events in the events list at once.
