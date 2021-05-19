@@ -34,7 +34,7 @@ class Event extends Component {
         {showDetails ?
           <div>
             <div className="event-details">
-              <a href={event.htmlLink}>See details on Google Calendar</a>
+              <a href={event.htmlLink} rel="noreferrer" target="_blank">See details on Google Calendar</a>
               <div className="event-description">{event.description}</div>
             </div>
             <button

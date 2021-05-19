@@ -74,9 +74,12 @@ Feature 1: Filter events by city
     Then user should see a list of cities that match what they've typed
 
   Scenario 3: User can select a city from the suggested list.
-    Given user was typing into city textbox and list of suggestions is showing
+    Given user was typing into city textbox
+    and list of suggestions is showing
     When user selects a city from the list
-    Then their city should be changed to that city and user should receive a list of upcoming events in that city
+    Then their city should be changed to that city
+    and the list of suggestions should disappear
+    and user should receive a list of upcoming events in that city
 
 Feature 2: Show/hide an event's details
 
