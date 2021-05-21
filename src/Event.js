@@ -34,21 +34,25 @@ class Event extends Component {
         {showDetails ?
           <div>
             <div className="event-details">
-              <a href={event.htmlLink} rel="noopener noreferrer" target="_blank">See details on Google Calendar</a>
+              <a className="event-link" href={event.htmlLink} rel="noopener noreferrer" target="_blank">See details on Google Calendar</a>
               <div className="event-description">{event.description}</div>
             </div>
-            <button
-              className="hide-details-btn details-btn"
-              onClick={this.handleClick}>
-              Hide details
+            <div className="btn-wrapper">
+              <button
+                className="hide-details-btn details-btn"
+                onClick={this.handleClick}>
+                Hide details
             </button>
+            </div>
           </div>
           :
-          <button
-            className="show-details-btn details-btn"
-            onClick={this.handleClick}>
-            show details
+          <div className="btn-wrapper">
+            <button
+              className="show-details-btn details-btn"
+              onClick={this.handleClick}>
+              show details
           </button>
+          </div>
         }
       </div>
     );
