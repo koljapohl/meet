@@ -49,12 +49,6 @@ class App extends Component {
     } );
   }
 
-  // updateAmountState = ( number ) => {
-  //   this.setState( {
-  //     amountEvents: number
-  //   } );
-  // }
-
   render() {
     return (
       <div className="App">

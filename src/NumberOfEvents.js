@@ -16,13 +16,17 @@ class NumberOfEvents extends Component {
   render() {
     return (
       <div className="NumberOfEvents">
-        <input
-          type="number"
-          className="number-input"
-          value={this.props.amountEvents}
-          onChange={this.handleNumberChanged}
-        />
-        <p className="number-error">{this.state.errorText}</p>
+        <div className="number-input inputWrapper">
+          <label for="number" className="number-label">Number of Events:</label>
+          <input
+            id="number"
+            type="number"
+            className="number-input"
+            value={this.props.amountEvents}
+            onChange={this.handleNumberChanged}
+          />
+          <p className="number-error">{this.state.errorText}</p>
+        </div>
       </div>
     );
   };

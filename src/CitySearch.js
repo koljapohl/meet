@@ -22,20 +22,23 @@ class CitySearch extends Component {
       query: suggestion,
       showSuggestions: false,
     } );
-
     this.props.updateEvents( suggestion );
   }
 
   render() {
     return (
       <div className="CitySearch">
-        <input
-          type="text"
-          className="city"
-          value={this.state.query}
-          onChange={this.handleInputChanged}
-          onFocus={() => { this.setState( { showSuggestions: true } ) }}
-        />
+        <div className="search-input inputWrapper">
+          <label className="citysearch-label" for="city">City Search:</label>
+          <input
+            id="city"
+            type="text"
+            className="city"
+            value={this.state.query}
+            onChange={this.handleInputChanged}
+            onFocus={() => { this.setState( { showSuggestions: true } ) }}
+          />
+        </div>
         <ul className="suggestions" style={this.state.showSuggestions ? {} : { display: 'none' }}>
           {this.state.suggestions.map( ( suggestion ) => (
             <li
