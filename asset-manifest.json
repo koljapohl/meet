@@ -1,24 +1,15 @@
 {
-  "files": {
-    "main.css": "/meet/static/css/main.462cb92e.chunk.css",
-    "main.js": "/meet/static/js/main.700e5a25.chunk.js",
-    "main.js.map": "/meet/static/js/main.700e5a25.chunk.js.map",
-    "runtime-main.js": "/meet/static/js/runtime-main.5d320d19.js",
-    "runtime-main.js.map": "/meet/static/js/runtime-main.5d320d19.js.map",
-    "static/js/2.33f53ec9.chunk.js": "/meet/static/js/2.33f53ec9.chunk.js",
-    "static/js/2.33f53ec9.chunk.js.map": "/meet/static/js/2.33f53ec9.chunk.js.map",
-    "static/js/3.919ae490.chunk.js": "/meet/static/js/3.919ae490.chunk.js",
-    "static/js/3.919ae490.chunk.js.map": "/meet/static/js/3.919ae490.chunk.js.map",
-    "index.html": "/meet/index.html",
-    "service-worker.js": "/meet/service-worker.js",
-    "service-worker.js.map": "/meet/service-worker.js.map",
-    "static/css/main.462cb92e.chunk.css.map": "/meet/static/css/main.462cb92e.chunk.css.map",
-    "static/js/2.33f53ec9.chunk.js.LICENSE.txt": "/meet/static/js/2.33f53ec9.chunk.js.LICENSE.txt"
-  },
-  "entrypoints": [
-    "static/js/runtime-main.5d320d19.js",
-    "static/js/2.33f53ec9.chunk.js",
-    "static/css/main.462cb92e.chunk.css",
-    "static/js/main.700e5a25.chunk.js"
-  ]
+  "main.css": "/meet/static/css/main.bd0eeee2.chunk.css",
+  "main.js": "/meet/static/js/main.fab84339.chunk.js",
+  "main.js.map": "/meet/static/js/main.fab84339.chunk.js.map",
+  "runtime~main.js": "/meet/static/js/runtime~main.2a9a44e7.js",
+  "runtime~main.js.map": "/meet/static/js/runtime~main.2a9a44e7.js.map",
+  "static/js/2.7835cc29.chunk.js": "/meet/static/js/2.7835cc29.chunk.js",
+  "static/js/2.7835cc29.chunk.js.map": "/meet/static/js/2.7835cc29.chunk.js.map",
+  "static/js/3.ac5f8097.chunk.js": "/meet/static/js/3.ac5f8097.chunk.js",
+  "static/js/3.ac5f8097.chunk.js.map": "/meet/static/js/3.ac5f8097.chunk.js.map",
+  "index.html": "/meet/index.html",
+  "precache-manifest.1ee79ea2f36d71d9ef8044c1e3a4458c.js": "/meet/precache-manifest.1ee79ea2f36d71d9ef8044c1e3a4458c.js",
+  "service-worker.js": "/meet/service-worker.js",
+  "static/css/main.bd0eeee2.chunk.css.map": "/meet/static/css/main.bd0eeee2.chunk.css.map"
 }
