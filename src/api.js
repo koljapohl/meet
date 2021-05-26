@@ -14,11 +14,11 @@ export const getAccessToken = async () => {
       const results = await axios.get(
         "https://aidkktxihe.execute-api.eu-central-1.amazonaws.com/dev/api/get-auth-url"
       );
-      const { authURL } = results.data;
-      window.location.href = authURL;
+      const { authUrl } = results.data;
+      return (window.location.href = authUrl);
     }
     return code && getToken(code);
-  }
+  };
   return accessToken;
 };
 
@@ -43,7 +43,7 @@ export const getEvents = async () => {
   const token = await getAccessToken();
   if (token) {
     removeQuery();
-    const url = "https://aidkktxihe.execute-api.eu-central-1.amazonaws.com/dev/api/get-events" + "/" + token;
+    const url = "https://aidkktxihe.execute-api.eu-central-1.amazonaws.com/dev/api/get-events/" + token;
     const result = await axios.get(url);
     if (result.data) {
       var locations = extractLocations(result.data.events);
@@ -72,7 +72,7 @@ const removeQuery = () => {
 const getToken = async (code) => {
   const encodeCode = encodeURIComponent(code);
   const { access_token } = await fetch(
-    "https://aidkktxihe.execute-api.eu-central-1.amazonaws.com/dev/api/token" + "/" + encodeCode
+    "https://aidkktxihe.execute-api.eu-central-1.amazonaws.com/dev/api/token/" + encodeCode
   )
     .then((res) => {
       return res.json();

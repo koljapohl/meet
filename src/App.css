@@ -91,17 +91,18 @@ input[type="number"]:hover {
 }
 
 .event {
-  padding: 10px 10px 25px;
+  padding: 10px 10px 15px;
   margin-bottom: 20px;
   text-align: left;
   border: 1px solid #ccc;
   border-radius: 8px;
   position: relative;
   background-color: var(--primary);
+  color: white;
 }
 
 .event-details{
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
 .event-description{
@@ -119,6 +120,10 @@ input[type="number"]:hover {
   background-color: var(--gray);
   color:var(--white);
   font: small-caption;
+}
+
+.show-details-btn {
+  margin-top: 0.6rem;
 }
 
 .name {
@@ -245,7 +250,7 @@ input[type="number"]:hover {
   margin: 0 auto;
 }
 
-.button-wrapper{
+.btn-wrapper{
   text-align: right;
 }
 
