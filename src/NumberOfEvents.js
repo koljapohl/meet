@@ -3,21 +3,21 @@ import React, { Component } from 'react';
 class NumberOfEvents extends Component {
   state = {
     errorText: ''
-  }
+  };
 
-  handleNumberChanged = ( event ) => {
+  handleNumberChanged = (event) => {
     const value = event.target.value;
-    this.setState( {
+    this.setState({
       errorText: ''
-    } );
-    this.props.updateEvents( null, value );
-  }
+    });
+    this.props.updateEvents(null, value);
+  };
 
-  render() {
+  render () {
     return (
       <div className="NumberOfEvents">
-        <div className="number-input inputWrapper">
-          <label for="number" className="number-label">Number of Events:</label>
+        <div className="inputWrapper">
+          <label htmlFor="number" className="number-label">Number of Events:</label>
           <input
             id="number"
             type="number"

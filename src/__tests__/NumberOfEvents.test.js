@@ -9,7 +9,7 @@ describe('<NumberOfEvents /> component', () => {
   });
 
   test('render input', () => {
-    expect(NumberOfEventsWrapper.find('.number-input').hostNodes()).toHaveLength(1);
+    expect(NumberOfEventsWrapper.find('.number-input')).toHaveLength(1);
   });
 
   // test( 'render number input correctly with initial state', () => {
