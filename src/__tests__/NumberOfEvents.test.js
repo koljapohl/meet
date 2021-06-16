@@ -2,15 +2,15 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import NumberOfEvents from '../NumberOfEvents';
 
-describe( '<NumberOfEvents /> component', () => {
+describe('<NumberOfEvents /> component', () => {
   let NumberOfEventsWrapper;
-  beforeAll( () => {
-    NumberOfEventsWrapper = shallow( <NumberOfEvents /> );
-  } );
+  beforeAll(() => {
+    NumberOfEventsWrapper = shallow(<NumberOfEvents />);
+  });
 
-  test( 'render textbox', () => {
-    expect( NumberOfEventsWrapper.find( '.number-input' ) ).toHaveLength( 1 );
-  } );
+  test('render input', () => {
+    expect(NumberOfEventsWrapper.find('.number-input').hostNodes()).toHaveLength(1);
+  });
 
   // test( 'render number input correctly with initial state', () => {
   //   const number = NumberOfEventsWrapper.state( 'numberEvents' );
@@ -38,4 +38,4 @@ describe( '<NumberOfEvents /> component', () => {
   //   const secondNumber = NumberOfEventsWrapper.state( 'numberEvents' );
   //   expect( NumberOfEventsWrapper.find( '.number-input' ).prop( 'value' ) ).toBe( secondNumber );
   // } );
-} );
+});
