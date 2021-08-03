@@ -58,13 +58,12 @@ input[type="number"]:hover {
 }
 
 .suggestions {
-  width: 205px;
-  position: absolute;
+  width: 245px;
   z-index: 2;
   align-self: center;
   margin: 0;
-  top: 66px;
-  left: 6rem;
+  top: 0px;
+  left: 3rem;
   font-size: 14px;
   box-shadow: 10px 10px 16px -12px rgba(0, 0, 0, 0.75);
 }
@@ -160,8 +159,8 @@ input[type="number"]:hover {
 }
 
 .Alert {
-  position: fixed;
   top: 20px;
+  font-size: 0.8rem;
 }
 
 .data-vis-wrapper {
@@ -230,7 +229,8 @@ input[type="number"]:hover {
 }
 
 .inputWrapper{
-  display: inline-flex;
+  display: flex;
+  flex-direction: column;
   margin: 1rem 0;
   align-items: center;
 }
