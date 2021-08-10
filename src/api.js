@@ -42,6 +42,9 @@ export const getEvents = async () => {
 
   if (!navigator.onLine) {
     const data = localStorage.getItem('lastEvents');
+    console.log(data);
+    console.log('data: ' + JSON.parse(data));
+    console.log(JSON.parse('data.events: ' + data.events));
     NProgress.done();
     return data ? JSON.parse(data).events : [];
   }
@@ -53,7 +56,7 @@ export const getEvents = async () => {
     const result = await axios.get(url);
     if (result.data) {
       var locations = extractLocations(result.data.events);
-      localStorage.setItem('lastEvents', JSON.stringify(result.data));
+      localStorage.setItem('lastEvents', JSON.stringify(result.data.events));
       localStorage.setItem('locations', JSON.stringify(locations));
     }
     NProgress.done();
