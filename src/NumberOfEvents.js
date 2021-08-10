@@ -31,7 +31,7 @@ class NumberOfEvents extends Component {
             className="number-input"
             value={this.props.amountEvents}
             onChange={this.handleNumberChanged}
-            lazy
+            lazy="true"
           />
           <ErrorAlert className="number-error" text={this.state.errorText} />
         </div>
