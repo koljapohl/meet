@@ -55,7 +55,7 @@ class App extends Component {
     return (
       <div className="App">
         {!navigator.onLine ?
-          <InfoAlert text={this.offlineHint} />
+          <InfoAlert text={this.state.offlineHint} />
           : <div></div>
         }
         <CitySearch locations={this.state.locations} updateEvents={this.updateEvents} />
