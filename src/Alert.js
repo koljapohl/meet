@@ -29,9 +29,7 @@ export class InfoAlert extends Alert {
 
   getStyle = () => {
     return {
-      color: this.color,
-      'font-size': '0.8rem',
-      'font-style': 'italic'
+      color: this.color
     };
   };
 }
@@ -44,9 +42,7 @@ export class ErrorAlert extends Alert {
 
   getStyle = () => {
     return {
-      color: this.color,
-      'font-size': '0.8rem',
-      'font-style': 'italic'
+      color: this.color
     };
   };
 }

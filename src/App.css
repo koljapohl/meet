@@ -161,6 +161,8 @@ input[type="number"]:hover {
 .Alert {
   top: 20px;
   font-size: 0.8rem;
+  font-style: italic;
+  font-size: 0.8rem;
 }
 
 .data-vis-wrapper {
