@@ -1,0 +1,11 @@
+{
+  "cSpell.enableFiletypes": [
+    "!jade",
+    "!php",
+    "dotenv",
+    "jsx-tags",
+    "vue",
+    "vue-html",
+    "vue-postcss"
+  ]
+}
