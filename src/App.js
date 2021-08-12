@@ -20,18 +20,18 @@ class App extends Component {
 
   async componentDidMount () {
     this.mounted = true;
-    // if (window.location.href.startsWith('http://localhost')) {
-    //   getEvents().then((events) => {
-    //     if (this.mounted) {
-    //       this.setState({
-    //         events,
-    //         locations: extractLocations(events),
-    //         showWelcomeScreen: false
-    //       });
-    //     }
-    //   });
-    //   return;
-    // }
+    if (window.location.href.startsWith('http://localhost')) {
+      this.setState({ showWelcomeScreen: false });
+      getEvents().then((events) => {
+        if (this.mounted) {
+          this.setState({
+            events,
+            locations: extractLocations(events)
+          });
+        }
+      });
+      return;
+    }
     const accessToken = localStorage.getItem('access_token');
     const isTokenValid = (await checkToken(accessToken)).error ? false : true;
     const searchParams = new URLSearchParams(window.location.search);
