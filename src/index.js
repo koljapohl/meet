@@ -6,6 +6,9 @@ import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 import * as atatus from 'atatus-spa';
 
+atatus.config('6145b20c3384450f9ee0d7787e9c890b').install();
+// atatus.notify(new Error('Test Atatus Setup'));
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
@@ -22,6 +25,3 @@ serviceWorkerRegistration.register();
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
-
-atatus.config('6145b20c3384450f9ee0d7787e9c890b').install();
-// atatus.notify(new Error('Test Atatus Setup'));
